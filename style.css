@@ -45,9 +45,6 @@
     height: 280px;
     cursor: pointer;
   }
-.img-porto{
-    width: 35%;
-}
 
   .box{
     height: 200px;
@@ -75,15 +72,51 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,163,63,1) 61%);
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+/*portofolio*/
+.imgporto{
+   width: 120%;
+}
+.imgporto:hover{
+    position: relative;
+
+    transition: all .5s ease-in;
+}
+.galery{
+   height: auto;
+   padding-top: 50px ;
+}
+.overlay{
+    position : fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 100;
+    text-align: center;
+    padding:130px,0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.overlay img{
+    width: 30%;
+    margin: auto;
+}
+.overlay:target{
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
+.bi-facebook:hover,.bi-instagram:hover,.bi-youtube:hover, h6:hover {
     color: #008000;
 }
-.fab {
-    color: #000000;
+.bi {
+    color: #222222;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color: #cecece;
     text-align: center;
 }
 @media (max-width: 768px) {
